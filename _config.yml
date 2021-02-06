@@ -34,7 +34,6 @@ user_title: Researcher
 
 # Build settings
 plugins:
-  - jekyll-feed
   - jekyll-maps
 
 mapping:
