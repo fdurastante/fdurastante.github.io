@@ -145,7 +145,7 @@ Numerical optimal control theory is a part of numerical optimization that deals
 with the problem of finding a <em>control</em> for either a boundary value problem
 or a dynamical system over a period of time in such a way that an objective
 function is minimized/maximized. The prototypical problem of this type has the form
-$$ (y^*,u^*) = \arg\min_{u \in \mathcal{U}} J(y,u) = \frac{1}{2}\|y - y_z\|_2^2 + \frac{\lambda}{2} \| u \|_2^2, \text{ s.t. } e(e,y) = 0,$$
+$$ (y^*,u^*) = \arg\min_{u \in \mathcal{U}} J(y,u) = \frac{1}{2}\|y - y_z\|_2^2 + \frac{\lambda}{2} \| u \|_2^2, \text{ s.t. } e(y,u) = 0,$$
 where $\mathcal{U}$ is a function space containing the admissible controls, $y_z$
 a target state, and $e(y,u)=0$ a boundary value problem that the quantity $y$ and
 $u$ have to satisfy. The numerical solution of such problem is challenging in many
