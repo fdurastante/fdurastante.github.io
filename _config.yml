@@ -35,6 +35,7 @@ user_title: Researcher
 # Build settings
 plugins:
   - jekyll-maps
+  - jekyll-sitemap
 
 mapping:
  provider: openstreetmap
