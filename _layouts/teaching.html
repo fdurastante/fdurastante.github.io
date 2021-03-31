@@ -4,18 +4,19 @@
   {% include head.html %}
   <body>
       {% include header.html %}
-      <div style="display: inline-block">
-        <ul>
-          <li><a href="#cpar2021">Calcolo Parallelo, 2021</a></li>
-          <li><a href="#lsmc2021">Laboratorio sperimentale matematica computazionale, 2021</a></li>
-          <li><a href="#cpar2020">Calcolo Parallelo, 2020</a></li>
+      <div style="width: 100%; display: table; max-width:1200px" id="about">
+      <div style="width: 140px; display: table-cell;">
+        <br><br><br><br>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#cpar2021">Calcolo Parallelo, 2021</a></li>
+          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#lsmc2021">Laboratorio sperimentale matematica computazionale, 2021</a></li>
+          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#cpar2020">Calcolo Parallelo, 2020</a></li>
         </ul>
       </div>
-      <section id="about">
-      <div class="standard-page" style="text-align: justify; text-justify: inter-word; display: inline-block;">
+      <div style="text-align: justify; text-justify: inter-word; display: table-cell; padding-left: 20px">
         {{ content }}
       </div>
-      </section>
+      </div>
       {% include footer.html %}
   </body>
 </html>
