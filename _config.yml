@@ -27,6 +27,23 @@ url: "https://fdurastante.github.io/" # the base hostname & protocol for your si
 twitter_username: Cirdans-Home
 github_username:  Cirdans-Home
 
+# SEO Settings
+twitter:
+  username: Cirdans-Home
+  card: summary
+
+social:
+  name: Fabio Durastante
+  links:
+    - https://twitter.com/CirdansHome
+    - https://www.linkedin.com/in/fdurastante/
+    - https://github.com/Cirdans-Home
+    - https://www.researchgate.net/profile/Fabio-Durastante
+    - https://scholar.google.it/citations?user=sB3fLcMAAAAJ&hl=it
+    - https://orcid.org/0000-0002-1412-8289
+
+google-site-verification: google149f3f1f84e56dc5.html
+
 # Settings of the template
 username: Fabio Durastante
 user_description: I'm a Researcher (RTDa) in Numerical Mathematics at Pisa University
@@ -36,6 +53,7 @@ user_title: Researcher
 plugins:
   - jekyll-maps
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 mapping:
  provider: openstreetmap
