@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/code.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/conferences.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/research.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/students.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/teaching.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/google149f3f1f84e56dc5.html</loc>
+<lastmod>2021-02-15T14:48:09+01:00</lastmod>
+</url>
+</urlset>
