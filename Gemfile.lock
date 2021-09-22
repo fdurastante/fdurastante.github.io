@@ -124,6 +124,7 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-leaflet (0.2.1)
     jekyll-maps (2.4.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-mentions (1.6.0)
@@ -260,6 +261,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-leaflet
   jekyll-maps
   jekyll-seo-tag
   jekyll-sitemap

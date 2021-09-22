@@ -54,6 +54,7 @@ plugins:
   - jekyll-maps
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-leaflet
 
 mapping:
  provider: openstreetmap
