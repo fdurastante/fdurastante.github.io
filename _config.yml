@@ -56,8 +56,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-leaflet
 
-mapping:
- provider: openstreetmap
+#mapping:
+# provider: openstreetmap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
