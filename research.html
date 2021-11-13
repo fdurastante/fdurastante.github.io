@@ -34,14 +34,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University" />
 <meta property="og:description" content="I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University" />
-<link rel="canonical" href="http://localhost:4000/research.html" />
-<meta property="og:url" content="http://localhost:4000/research.html" />
+<link rel="canonical" href="https://fdurastante.github.io//research.html" />
+<meta property="og:url" content="https://fdurastante.github.io//research.html" />
 <meta property="og:site_name" content="Fabio Durastante" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Fabio Durastante" />
 <meta name="twitter:site" content="@Cirdans-Home" />
 <script type="application/ld+json">
-{"description":"I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University","@type":"WebPage","url":"http://localhost:4000/research.html","headline":"Fabio Durastante","@context":"https://schema.org"}</script>
+{"description":"I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University","@type":"WebPage","url":"https://fdurastante.github.io//research.html","headline":"Fabio Durastante","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -88,13 +88,14 @@ target="_blank"><i class="fab fa-google"> Google Scholar Profile</i></a>, my
 <a href="https://orcid.org/0000-0002-1412-8289" target="_blank"><i class="fab fa-orcid">
   Orcid</i></a> profile.<br><br>
 
+
 Solving Linear Algebra problems is a core task in pretty much every Scientific
-Challenges, from the numerical solution of partial differential equations, to the
-new problems arising in the analysis of larger and larger set of data. Moreover,
-we are fastly moving towards the use of exascale-enabled HPC platforms, thus
-we need to be capable of pushing our algorithms (and codes) to work efficiently
-in this environment. This first research line deals with this type of issue, and
-more specifically with the task of solving linear systems of equation,
+challenge, from the numerical solution of partial differential equations to the
+new problems arising in the analysis of larger and larger sets of data. Moreover,
+we are fastly moving towards the use of exascale-enabled HPC platforms, thus we
+need to be capable of pushing our algorithms (and codes) to work efficiently in
+this environment. This first research line deals with this type of issue, and
+more specifically with the task of solving linear systems of equations,
 $$ A \mathbf{x} = \mathbf{b}, \qquad A \in \mathbb{R}^{N \times N}, \; \mathbf{x},\mathbf{b} \in \mathbb{R}^{N}, $$
 in which $A$ is a <em>large</em>, $N \geq 10^9$, and <em>sparse</em>,
 number on non-zero entries proportional to $N$, matrix. The key instruments are
@@ -163,9 +164,9 @@ one linear system.
 </table>
 
 Fractional calculus is that subset of Analysis that studies the possibilities of
-defining differential operator of real or complex order. After the definition of
-such objects, the needs of numerically approximating the solution of differential
-equations defined in terms of them immediately arise. The following papers deal
+defining differential operators of real or complex order. After the definition
+of such objects, the need to numerically approximate the solution of differential
+equations defined in terms of them immediately arises. The following papers deal
 with the efficient numerical solution of different formulations of such problems.
 
 <table style="width:100%">
@@ -225,14 +226,14 @@ with the efficient numerical solution of different formulations of such problems
 
 Numerical optimal control theory is a part of numerical optimization that deals
 with the problem of finding a <em>control</em> for either a boundary value problem
-or a dynamical system over a period of time in such a way that an objective
-function is minimized/maximized. The prototypical problem of this type has the form
+or a dynamical system over a period of time in such a way that an objective function
+is minimized/maximized. The prototypical problem of this type has the form
 $$ (y^*,u^*) = \arg\min_{u \in \mathcal{U}} J(y,u) = \frac{1}{2}\|y - y_z\|_2^2 + \frac{\lambda}{2} \| u \|_2^2, \text{ s.t. } e(y,u) = 0,$$
 where $\mathcal{U}$ is a function space containing the admissible controls, $y_z$
-a target state, and $e(y,u)=0$ a boundary value problem that the quantity $y$ and
-$u$ have to satisfy. The numerical solution of such problem is challenging in many
-ways, it mixes together optimization, differential and linear algebra problems in
-a non-trivial way.
+a target state, and $e(y,u)=0$ a boundary value problem that the quantities $y$
+and $u$ have to satisfy. The numerical solution of such a problem is challenging
+in many ways, it mixes together optimization, differential, and linear algebra
+problems in a non-trivial way.
  <table style="width:100%">
    <colgroup>
     <col span="1" style="width: 30%;">
@@ -273,11 +274,11 @@ a non-trivial way.
   </tr>
   </table>
   A matrix function is simply a function which maps a matrix to another matrix,
-  indeed to maintain interesting properties one have to extend the concept of
+  indeed to maintain interesting properties one has to extend the concept of
   scalar function to a matrix in a clever way. If, e.g., $f$ is a function
-  admitting a Taylor expansion with radius of convergence $r$, and $A$ is a matrix
-  such $\|A\| < r$ for any compatible norm $\|\cdot\|$, then $f(A)$ can be
-  defined as
+  admitting a Taylor expansion with radius of convergence $r$, and $A$ is a
+  matrix such $\|A\| < r$ for any compatible norm $\|\cdot\|$, then $f(A)$ can
+  be defined as
   $$ f(A) = \sum_{j=0}^{+\infty} c_k A^k, $$
   for $c_k$ the Taylor coefficients of $f$. Equivalently, if $A$ is diagonalizable,
   and $f$ is defined on the eigenvalues of $A$, then
@@ -337,15 +338,15 @@ a non-trivial way.
      <td style="text-align:center;"> Matrix-Functions </td>
   </tr>
   </table>
-  Network science is the studies of complex networks that are nothing more than
-  graphs that are both not random and not structured, e.g., one usually do not
-  consider Cayley graphs encoding the structure of an abstract group.  Examples
-  are telecommunication networks, computer networks, biological networks,
-  social networks, and many others. In each case every actor is represented by
-  a vertex of the graph and their connections as an edge. My interest in this
-  field lies both in the modelling and the computational aspects, specifically
-  in the task of extracting information on the networked phenomena by looking at
-  the topology of the graph.
+  Network science is the study of complex networks that are nothing more than
+  graphs that are both not random and not structured, e.g., one usually does not
+  consider Cayley graphs encoding the structure of an abstract group.
+  Examples are telecommunication networks, computer networks, biological
+  networks, social networks, and many others. In each case, every actor is
+  represented by a vertex of the graph and their connections as an edge.
+  My interest in this field lies both in the modeling and the computational
+  aspects, specifically in the task of extracting information on the networked
+  phenomena by looking at the topology of the graph.
   <table style="width:100%">
     <colgroup>
      <col span="1" style="width: 30%;">
@@ -395,15 +396,16 @@ a non-trivial way.
   </tr>
   </table>
 
-Inverse problems are involved in the task of inferring the parameters of model
-from a set of (possibly noisy) measurement requires. These type of problems
-can be difficult to solve for several reason, e.g., one could be dealing with a
-lack of unicity, that is: different values of parameters are consistent with the
-measurement, and discovering the parameters may be challenging from the computational
-point of view. I have done some work in using linear algebra techniques for
-a particular type of inverse problem that is <em>image denoise and deblurring</em>,
-that is the process of removing blurring artifacts and noise from images (e.g.,
-somebody shaked the camera while we were taking the photo).
+Inverse problems are involved in the task of inferring the parameters of the
+model from a set of (possibly noisy) measurements requires. These types of
+problems can be difficult to solve for several reasons, e.g., one could be
+dealing with a lack of unicity, that is: different values of parameters are
+consistent with the measurement, and discovering the parameters may be
+challenging from the computational point of view. I have done some work in using
+linear algebra techniques for a particular type of inverse problem that is
+<em>image denoise and deblurring</em>, that is the process of removing blurring
+artifacts and noise from images (e.g., somebody shook the camera while we were
+taking the photo).
   <table style="width:100%">
     <colgroup>
      <col span="1" style="width: 70%;">
