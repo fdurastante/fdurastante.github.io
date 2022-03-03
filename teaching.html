@@ -34,14 +34,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University" />
 <meta property="og:description" content="I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University" />
-<link rel="canonical" href="https://fdurastante.github.io//teaching.html" />
-<meta property="og:url" content="https://fdurastante.github.io//teaching.html" />
+<link rel="canonical" href="http://localhost:4000/teaching.html" />
+<meta property="og:url" content="http://localhost:4000/teaching.html" />
 <meta property="og:site_name" content="Fabio Durastante" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Fabio Durastante" />
 <meta name="twitter:site" content="@Cirdans-Home" />
 <script type="application/ld+json">
-{"description":"I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University","@type":"WebPage","url":"https://fdurastante.github.io//teaching.html","headline":"Fabio Durastante","@context":"https://schema.org"}</script>
+{"description":"I’m a Researcher (RTDa) in Numerical Mathematics at Pisa University","@type":"WebPage","url":"http://localhost:4000/teaching.html","headline":"Fabio Durastante","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -73,321 +73,58 @@
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-      <div style="width: 100%; display: table; max-width:1200px" id="about">
-      <div style="width: 140px; display: table-cell;">
-        <br><br><br><br>
-        <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#frac2022">An introduction to fractional calculus: fundamental ideas and numerics</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#cortona2022">Iterative Methods For Large-Scale Saddle-Point Problems</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#numrecp2022">Numerical recipes for environmental sciences with MATLAB</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#lsmc2022">Laboratorio sperimentale matematica computazionale, 2022</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#limco2022">Laboratorio sperimentale matematica computazionale, 2022</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#ingcnum2022">Calcolo Numerico, 2022</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#cpar2021">Calcolo Parallelo, 2021</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#lsmc2021">Laboratorio sperimentale matematica computazionale, 2021</a></li>
-          <li><span class="fa-li"><i class="fas fa-book"></i></span><a href="#cpar2020">Calcolo Parallelo, 2020</a></li>
-        </ul>
-      </div>
-      <div style="text-align: justify; text-justify: inter-word; display: table-cell; padding-left: 20px">
+      <section id="about">
+      <div class="standard-page" style="text-align: justify; text-justify: inter-word;">
         <h1>Teaching</h1>
 
 <q>EDUCATION, n. That which discloses to the wise and disguises from the foolish
   their lack of understanding. </q> - Ambrose Bierce, The Cynic's Dictionary (1906)
 
-  <section id="frac2022">
-  <h2><i class="devicon-github-original"></i> An introduction to fractional calculus: fundamental ideas and numerics - Ph.D. Course in Mathematics - Università di Pisa - A.A. 2021/22/23</h2>
+<h3>A.A. 2021/2022</h3>
 
-<p>Fractional calculus, i.e., the definition of integrodifferential operators of
-non-integer order, has a long history. It runs parallel to that of modern
-differential calculus as it started with the first correspondence between Leibniz, John
-Bernoulli, and De l'Hôpital in which it appears as a pure formula-generating
-curiosity far removed from the geometric
-interpretation of ordinary derivatives.<span id="dots">...</span><span id="more">Then, it evolved towards more modern works by Riemann,
-Hardy, and Littlewood, finally reaching the contemporary efforts to extend and interpret its
-objects. Where the possibility of doing rigorous mathematics and proving results
-within the new theory may be reason enough to invest time in its study, the push
-of the last few years in this endeavor is due, as often happens, to the birth of
-different areas of application outside of mathematics. Consider, for example,
-the modeling of the transport of fluids within highly non-homogeneous media, the
-modeling of non-local phenomena, or the search for evolutionary models of a
-non-Markovian nature. These needs have led to the definition of new operators or to
-the reinterpretation of classical instruments and, at the same time, to the
-search for numerical methods to simulate these models efficiently and accurately.<br>
-
-The purpose of this course is, on the one hand, to introduce the theoretical and
-analytical tools necessary to formulate the constitutive laws of these new models
-(definitions of operators, existence and uniqueness theorems, regularity of the
-solution, etc.), from other, to show how it is possible to construct numerical
-methods for their simulation. In particular, we will focus on the definition of
-fractional integral operators, with the associated fractional derivative
-operations according to Riemann-Liouville, Caputo, and Riesz. With these
-instruments we will first discuss the formulation of ordinary fractional
-equations and their solution, then their use in the
-definition of fractional diffusion problems as a fractional partial differential
-equation. Regarding numerical methods, we will focus on finite
-difference and multi-step methods for simulating initial value problems with time-fractional
-derivatives. Regarding the solution of boundary value problems with space-fractional derivatives,
-we will focus on the use of finite difference methods and on the connection between
-the properties of the resulting discretization matrices and the analytic
-properties of the operators.<br>
-
-In the final part, we will briefly touch on some questions concerning
-the definition of the fractional Laplacian and some of its applications within
-modeling for complex networks.</span><button onclick="readmore()" id="myBtn" class="button-2" role="button">Read more</button></p>
-
-<p><strong>Prerequisites.</strong> The course makes use of some basic concepts about
-Lebesgue integration - e.g., $\mathbb{L}^p$ spaces, Fubini's Theorem. Regarding the computational parts, some basic knowledge of quadrature formulas, finite differences for ordinary differential operators, and multi-step methods for initial value problems. For the final parts, it is useful to have some skills with Krylov type projective methods for the solution of linear systems and the concept of preconditioning.</p>
-
-<p><strong>Scheduling.</strong> The course will be divided into two parts, the first in May (6 lessons 2h, 3 weeks)
-and in the months of September/October (9 lessons 2h, 5 weeks).</p>
-
-</section>
-
-<section id="cortona2022">
-  <h2><img src="https://www.smi-math.unipr.it/images/cropped-Progetto-senza-titolo-4-180x180.png"
-    alt="SMI" style="height:1.25em;"> Iterative Methods For Large-Scale Saddle-Point Problems - Scuola Matematica
-    Interuniversitaria - 8-20/05/2022</h2>
-    <table style="margin-left: auto;margin-right: auto;">
-    <tbody>
-    <tr>
-    <th style="background-color: #4468ab;"><span style="color: #ffffff;">Lecturer 1</span></th>
-    <th style="background-color: #4468ab;"><span style="color: #ffffff;">Lecturer 2</span></th>
-    </tr>
-    <tr>
-    <td>
-    <p><strong>Michele Benzi</strong></p>
-    <p>Scuola Normale Superiore, Pisa</p>
-    </td>
-    <td>
-    <p><strong>Fabio Durastante</strong></p>
-    <p>Dipartimento di Matematica, Universit&agrave; di Pisa</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-    <h3>Abstract</h3>
-    <p>Large-scale systems of equations in saddle-point form arise in many different areas of science and engineering, from the numerical solution of important PDEs to problems in constrained optimization and data science. Many techniques have been developed to solve such systems but a number of challenges remain, and &nbsp;research in this field continues to be very active. The course will describe some of the applications where these systems arise and offer a panoramic view of the best solution methods available, up to recent advances. Theoretical foundations will also be addressed.&nbsp; </p>
-    <p>Topics will include:</p>
-    <ul>
-    <li>A brief introduction to Krylov subspace methods and preconditioning;</li>
-    <li>Spectral properties of saddle-point matrices;</li>
-    <li>Saddle-point problems arising from finite element discretizations of incompressible flow problems and elliptic PDEs;</li>
-    <li>PDE-constrained optimization problems;</li>
-    <li>Solution of saddle-point problems arising in constrained optimization;</li>
-    <li>Approximate Schur complement and augmented Lagrangian techniques;</li>
-    <li>Constraint preconditioning;</li>
-    <li>Spectral analysis of preconditioned matrices.</li>
-    </ul>
-    <p><strong>Organization:</strong></p>
-    <p>The course will be divided in two parts of 20 hrs each. In the morning lectures, Prof. Benzi will discuss fundamental principles, theoretical aspects, and the general algorithmic approaches available for the solution of saddle-point systems. &nbsp;In the afternoon lectures, Dr. Durastante will cover in detail some of the main applications, solution algorithms, and implementation and software aspects. Whenever possible, concrete examples will be discussed and hands-on&nbsp;exercises will be assigned to the participants.</p>
-    <p>Reading material will be distributed to the participants, who are expected to take an active role&nbsp;in the learning process.</p>
-    <p><strong>Obligations of partecipants</strong><br />Each participant is required to attend both modules and the afternoon seminars.&nbsp;</p>
-    <p><strong>Application</strong></p>
-    <p>Applications can be submitted exclusively online, on the
-      <a href="https://www.smi-math.unipr.it/cortona/30/" target="_blank">SMI website.</a></p>
-    <p>Applications start: 1 March, 2022;<br /><strong>Deadline for applications is APRIL 15, 2022.</strong></p>
-    <p>A selection committee will meet shortly afterwards and all accepted foreign applicants will be notified of the result in due time.<br>
-      Applications should contain a <b>BRIEF CURRICULUM VITAE</b> and a <b>DETAILED CURRICULUM STUDIORUM</b>. The exact e-mail address to which all correspondence concerning the Summer courses has to be mailed should be clearly stated.<br />Selected people will be informed by e-mail.</p>
-
-</section>
-
-<section id="numrecp2022">
-  <h2> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" style="height:1.5em;"  /> Numerical recipes for environmental sciences with MATLAB - Ph.D. Course in Models and Methods for Material and
-Environmental Sciences - Università degli Studi di Modena e Reggio Emilia - A.A. 2021/22</h2>
-
-  <p>Numerical simulations are computations we run on a computer with programs
-  implementing a mathematical model for a chemical, physical or biological system.
-  We need them to study the behavior of processes whose mathematical formulations
-  are too complex to provide analytical solutions. The computational science area
-  is itself a rapidly growing field. While the largest and most accurate
-  simulations often use advanced computing capabilities, there is an ample
-  layer of small and intermediate problems across many disciplines that we can
-  face with easier-to-handle tools. This course will address one of such tools
-  called MATLAB. We will use it to perform small-scale computer simulations.
-  In the first place, we are going to introduce the programming language on
-  its own and take some familiarity with it. Then, we will apply it to solve
-  some problems in Earth, Life, and Chemical sciences.</p>
-
-  <p><strong>Scheduling:</strong> Two lessons per week of two hours each from
-    the 1st of March. Tuesday and Thursday from 9.00 to 11.00.</p>
-
-  <p><strong>Modalities:</strong> The course will take place online in
-    synchronous mode on <a href="https://cutt.ly/yPzEEvG" target="_blank">
-      Microsoft Teams.</a> </p>
-
-  <p><strong>Lecture notes:</strong> lecture notes and exercises are available
-  <a href="https://cirdans-home.github.io/recipesforenvsciences/" target="_blank">on-line</a>.</p>
-</section>
-
-
-  <section id="lsmc2022">
-  <h2><i class="devicon-moodle-plain colored"></i> Laboratorio sperimentale di matematica computazionale 2021/2022 – Laurea Triennale in Matematica, 2021/2022
-    – Università di Pisa</h2>
-
-  <p> Le informazioni relative alle singole lezioni sono contenute nella <a href="https://elearning.dm.unipi.it/course/view.php?id=360" target="_blank">
-    piattaforma E-Learning</a> del dipartimento. Registratevi per accedere all'aula on-line, scaricare il materiale e registrare le presenze.<br>
-    La <b>prima lezione</b> si terrà <b>Mercoledì 2 Marzo</b>.
-  </p>
-
-  <p><b>Orario delle lezioni:</b>
-    <ul>
-    <li> Mercoledì 14:00‑15:45 Aula Fib H-Lab </li>
-    <li> Venerdì 16:00‑17:45 Aula Fib M-Lab </li>
-    </ul>
-  </p>
-
-  <h3> Lezioni Tematiche </h3>
-
-  Per qualsiasi informazione aggiuntiva scrivetemi un'<a href="mailto:fabio.durastante@unipi.it">E-mail</a>.
-
-  <h3> Regolamento del corso </h3>
-
-  Il corso è a frequenza obbligatoria, e la verifica di profitto avviene <i>"sulla base del lavoro svolto in aula"</i>.<br>
-
-  In particolare, per ottenere l'idoneità è necessario:<br>
-  <ul>
-  <li> aver consegnato e ricevuto valutazione positiva degli esercizi assegnati dopo ogni lezione, a verifica della comprensione degli argomenti trattati in aula; la consegna degli esercizi avviene tramite <b>Moodle</b>; </li>
-  </ul>
-  e soddisfare almeno una delle seguenti condizioni:<br>
-  <ul>
-  <li>  aver partecipato ad almeno 18 delle 21 lezioni in laboratorio.</li>
-  <li>  aver partecipato ad almeno 15 delle 21 lezioni, ed aver consegnato e ricevuto valutazione positiva su un progetto aggiuntivo concordato con il docente del corso, relativo agli argomenti trattati nelle lezioni non frequentate.</li>
-  </ul>
-
-  Nel caso di eventuali assenze giustificate da <i>"comprovata impossibilità a frequentare il laboratorio"</i>, come ad esempio assenze per motivi di salute e/o lavorativi, è possibile sostenere l'esame in forma alternativa concordata con il docente anche nel caso non si raggiunga il minimo numero di presenze necessarie.<br>
-
-  <h4> Utilizzare Matlab/Octave </h4>
-
-  Per completare le attività di programmazione del laboratorio si possono usare (equivalentemente) i software <bf>Matlab</bf> o <bf>Octave</bf>. <br>
-
-  <ul>
-  <li>Per l'utilizzo di <b>Matlab</b> è possibile sfruttare le credenziali di Ateneo per accedere al download del software o alla possibilità di utilizzarlo online mediante il collegamento:  <a href="http://unipi.it/matlab"> http://unipi.it/matlab</a>. È da notare che le credenziali sono solo il modo di associare la licenza dell’Università ad un account Matlab che va comunque creato (e con cui poi ci si collegherà per scaricare od utilizzare il software tramite browser).</li>
-  <li>Per l'utilizzo di <b>Octave</b> si possono seguire le istruzioni su <a href="https://www.gnu.org/software/octave/index">https://www.gnu.org/software/octave/index</a>.</li>
-  </ul>
-
-  </section>
-
-<section id="limco2022">
-<h2><i class="devicon-moodle-plain colored"></i> Laboratorio di introduzione alla matematica computazionale - B  2021/2022 – Laurea Triennale in Matematica, 2021/2022
-  – Università di Pisa</h2>
-
-Per il <b>canale B</b> i referenti siamo Prof. Fabio Durastante e Prof. Giovanni Manzini<br>
-<br>
-<ul>
-<li> Per poter partecipare attivamente al laboratorio è necessario avere un account di <b>Ateneo valido</b>.  </li>
-<li> Il corso assegna solo una <b>idoneità</b> e non prevede un esame, ma richiede di frequentare almeno <b>7 lezioni su 10</b> in ciascun semestre, e di <b>consegnare gli esercizi</b> in itinere assegnati.
-<li> Gli studenti sono divisi in questo modo:
-    <a href="https://elearning.dm.unipi.it/enrol/index.php?id=351" target="_blank">Corso A - matricole pari.</a> <b>
-    <a href="https://elearning.dm.unipi.it/enrol/index.php?id=352" target="_blank">Corso B - matricole dispari</a></b>
-</li>
-</ul>
-<br>
-
-<p>La prima lezione è fissata per <b>Martedì 28 Settembre</b> dalle ore 14.00 alle ore 15.45 in Aula M-Lab del Polo Fibonacci e sull'Aula BBB elencata qui.<br> L'orario del Corso B è in generale sempre il Martedì dalle ore 14:00-15:45 aula M-Lab al Polo Fibonacci. </p>
-
-<p>Registratevi sull'opportuno canale della piattaforma Moodle in base alla <b>parità della vostra Matricola!</b>
-
-<p>Ulteriori <b>informazioni aggiornate</b> si trovano sul <a href="https://people.cs.dm.unipi.it/limco/2021-22/" target="_blank">sito web del corso</a>.
-
-</section>
-
-<section id="ingcnum2022">
-<h2><i class="devicon-moodle-plain colored"></i> Calcolo Numerico 2021/2022 – Laurea Magistrale in Ingegneria Meccanica/Veicoli, 2021/2022
-  – Università di Pisa</h2>
-
-I referenti del corso sono la <a href="http://people.cs.dm.unipi.it/boito/" target="_blank">Prof. Paola Boito</a>
-ed il Prof. Fabio Durastante.<br>
-
-<b>Orario:</b> Lun 9:30-11:30, Mar 9:30-11:30, Mer 15-16, Aula C32 + aula virtuale.<br>
-Il corso sulla <a href="https://elearn.ing.unipi.it/course/view.php?id=2546" target="_blank">piattaforma Moodle.</a>
-
-</section>
-
-<section id="cpar2021">
-<h2><i class="devicon-c-plain colored"></i> Calcolo Parallelo – Master in Scienze e Tecnologie Spaziali, 2021 –
-  Università di Roma Tor Vergata </h2>
-
-Il proposito di queste <b>tre lezioni</b> è quello di dare un'introduzione alle
-idee che sono alla base del calcolo parallelo con un indirizzo al suo uso in ambito
-scientifico.
-
-L'obiettivo è di avere al termine un'idea delle problematiche principali che si
-possono affrontare con questi strumenti e di essersi impadroniti dell'utilizzo degli
-strumenti più comuni di MPI. Questo vi permetterà di approcciare l'uso di librerie
-per il calcolo scientifico (parallelo) avendo un'idea di quello che succede dietro
-le quinte.
-
-Le lezioni si terranno sulla piattafoma Microsoft Teams
-<ul>
-  <li> Lunedì 17 Maggio, dalle 16.30 alle 19.00 -
-    <a href="https://github.com/Cirdans-Home/intrompi/raw/main/slide2021/Lecture1/Lecture1.pdf" target="_blank">Slide</a> -
-    <a href="https://github.com/Cirdans-Home/intrompi/raw/main/code2021/Lecture1.tar.xz" target="_blank">Codici</a> </li>
-  <li> Giovedì 20 Maggio dalle 15.00 alle 17.15 - <a href="https://github.com/Cirdans-Home/intrompi/raw/main/slide2021/Lecture2/Lecture2.pdf" target="
-    ">Slide</a> - <a href="https://github.com/Cirdans-Home/intrompi/raw/main/code2021/Lecture2.tar.xz" target="_blank">Codici</a> </li>
-  <li> Lunedì 24 Maggio dalle 15.00 alle 17.15 - <a href="https://github.com/Cirdans-Home/intrompi/raw/main/slide2021/Lecture3/Lecture3.pdf" target="_blank">Slide</a> - <a href="https://github.com/Cirdans-Home/intrompi/raw/main/code2021/Lecture3.tar.xz" target="_blank">Codici</a> </li>
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>
+    <a class="link" href="courses/introfracalculus.html#about">
+      An introduction to fractional calculus: fundamental ideas and numerics</a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>
+    <a class="link" href="courses/saddlepoint.html#about">
+    Iterative Methods For Large-Scale Saddle-Point Problems
+    </a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>
+    <a class="link" href="courses/numrecipe.html#about">
+    Numerical recipes for environmental sciences with MATLAB </a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-desktop"></i></span>
+    <a class="link" href="courses/lsmc2022.html#about">
+    Laboratorio sperimentale di matematica computazionale </a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-desktop"></i></span>
+    <a class="link" href="courses/limco2022.html#about">
+    Laboratorio di introduzione alla matematica computazionale - B </a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-chalkboard-user"></i></span>
+    <a class="link" href="courses/ingcnum2022.html#about">
+    Calcolo Numerico </a></li>
 </ul>
 
-Parte del materiale discusso all'iterno del corso è disponibile nelle <a href="https://cirdans-home.github.io/intrompi/README.html"
-target="_blank">dispense</a> (in perenne aggiornamento).
+<h3>A.A. 2020/2021</h3>
 
-</section>
-
-<section id="lsmc2021">
-<h2><i class="devicon-moodle-plain colored"></i> Laboratorio sperimentale di matematica computazionale 2020/2021 – Laurea Triennale in Matematica, 2020/2021
-  – Università di Pisa</h2>
-
-Le informazioni relative alle singole lezioni sono contenute nella <a href="https://elearning.dm.unipi.it/" target="_blank">piattaforma
-E-Learning</a> del dipartimento.<br>
-
-Le lezioni sono il <b>Martedì</b> dalle <b>16:00‑17:45</b> ed il <b>Mercoledì</b> dalle <b>14:00‑15:45</b>.<br>
-
-La prima lezione del corso sarà <b>Mercoledì 24 Febbraio<b>.<br>
-
-<h3> Lezioni Tematiche </h3>
-
-Per qualsiasi informazione aggiuntiva scrivetemi un'<a href="mailto:fabio.durastante@unipi.it">E-mail</a>.
-
-<h3> Regolamento del corso </h3>
-
-Il corso è a frequenza obbligatoria, e la verifica di profitto avviene <i>"sulla base del lavoro svolto in aula"</i>.<br>
-
-In particolare, per ottenere l'idoneità è necessario:<br>
-<ul>
-<li> aver consegnato e ricevuto valutazione positiva degli esercizi assegnati dopo ogni lezione, a verifica della comprensione degli argomenti trattati in aula; la consegna degli esercizi avviene tramite <b>Moodle</b>; </li>
-</ul>
-e soddisfare almeno una delle seguenti condizioni:<br>
-<ul>
-<li>  aver partecipato ad almeno 18 delle 21 lezioni in laboratorio.</li>
-<li>  aver partecipato ad almeno 15 delle 21 lezioni, ed aver consegnato e ricevuto valutazione positiva su un progetto aggiuntivo concordato con il docente del corso, relativo agli argomenti trattati nelle lezioni non frequentate.</li>
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa-solid fa-desktop"></i></span>
+    <a class="link" href="courses/lsmc2021.html#about">
+      Laboratorio sperimentale di matematica computazionale </a></li>
+  <li><span class="fa-li"><i class="fa-solid fa-server"></i></span>
+    <a class="link" href="courses/cpar2021.html#about">
+      Calcolo Parallelo </a></li>
 </ul>
 
-Nel caso di eventuali assenze giustificate da <i>"comprovata impossibilità a frequentare il laboratorio"</i>, come ad esempio assenze per motivi di salute e/o lavorativi, è possibile sostenere l'esame in forma alternativa concordata con il docente anche nel caso non si raggiunga il minimo numero di presenze necessarie.<br>
+<h3>A.A. 2019/2020</h3>
 
-<h4> Utilizzare Matlab/Octave </h4>
-
-Per completare le attività di programmazione del laboratorio si possono usare (equivalentemente) i software <bf>Matlab</bf> o <bf>Octave</bf>. <br>
-
-<ul>
-<li>Per l'utilizzo di <b>Matlab</b> è possibile sfruttare le credenziali di Ateneo per accedere al download del software o alla possibilità di utilizzarlo online mediante il collegamento:  <a href="http://unipi.it/matlab"> http://unipi.it/matlab</a>. È da notare che le credenziali sono solo il modo di associare la licenza dell’Università ad un account Matlab che va comunque creato (e con cui poi ci si collegherà per scaricare od utilizzare il software tramite browser).</li>
-<li>Per l'utilizzo di <b>Octave</b> si possono seguire le istruzioni su <a href="https://www.gnu.org/software/octave/index">https://www.gnu.org/software/octave/index</a>.</li>
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa-solid fa-server"></i></span>
+    <a class="link" href="courses/cpar2020.html#about">
+    Calcolo Parallelo </a></li>
 </ul>
-</section>
-
-<section id="cpar2020">
-  <h2><i class="devicon-c-plain colored"></i>Calcolo Parallelo – Master in Scienze e Tecnologie Spaziali, 2020 –
-    Università di Roma Tor Vergata</h2>
-
-  <ul>
-    <li>
-      <strong>Lezione 1</strong>
-      <ul><li> <a rel="noreferrer noopener" aria-label="Slide (si apre in una
-        nuova scheda)" href="https://drive.google.com/file/d/135bHj11IOWzHM1BpmbAbmPJ_qhN_rHOQ/view?usp=sharing"
-         target="_blank">Slide</a></li>
-         <li><a rel="noreferrer noopener" aria-label="Codici Esempio (si apre in una nuova scheda)" href="https://drive.google.com/file/d/1M7n6UjFGUJqpty5giT8GZivxsPIZxkKU/view?usp=sharing" target="_blank">Codici Esempio</a></li></ul></li><li><strong>Lezione 2</strong><ul><li><a rel="noreferrer noopener" aria-label="Slide (si apre in una nuova scheda)" href="https://drive.google.com/file/d/1_nSKCEBK41VZ8W34O0nQy1bsRGLhg0BR/view?usp=sharing" target="_blank">Slide</a></li><li><a rel="noreferrer noopener" aria-label="Codici Esempio (si apre in una nuova scheda)" href="https://drive.google.com/open?id=1L7mEP83gSWf3APcgiRWRIoLFhJF6c_sJ" target="_blank">Codici Esempio</a></li></ul></li><li><strong>Lezione 3</strong><ul><li><a rel="noreferrer noopener" aria-label="Slide (si apre in una nuova scheda)" href="https://drive.google.com/file/d/1I-fiezjNBYM6Wu8f6g2HC9Vib0WDbEb9/view?usp=sharing" target="_blank">Slide</a></li><li><a rel="noreferrer noopener" aria-label="Codici Esempio (si apre in una nuova scheda)" href="https://drive.google.com/open?id=1TNjs4s4UEz_k2kAQSKwhXJUvb1ioQjhy" target="_blank">Codici Esempio</a></li></ul></li><li><strong>Lezione 4</strong><ul><li><a rel="noreferrer noopener" aria-label="Slide (si apre in una nuova scheda)" href="https://drive.google.com/file/d/1R76QcUGAZPwFhm8yfi0XS2fhEnoGAsdo/view?usp=sharing" target="_blank">Slide</a></li><li><a href="https://drive.google.com/file/d/1PBAUBq7CSU2KrazuAPzALwPn9chHrEpy/view?usp=sharing" target="_blank" rel="noreferrer noopener" aria-label="Codici Esempio (si apre in una nuova scheda)">Codici Esempio</a></li></ul></li></ul>
-</section>
 
       </div>
-      </div>
+      </section>
       <footer class="footer">
     <p>&copy; Fabio Durastante</p>
     <p>Built with Jekyll and <span class="love">❤</span></p>
