@@ -1,0 +1,14 @@
+@article{https://doi.org/10.1002/nla.2523,
+author = {Bertaccini, Daniele and D'Ambra, Pasqua and Durastante, Fabio and Filippone, Salvatore},
+title = {Why diffusion-based preconditioning of Richards equation works: Spectral analysis and computational experiments at very large scale},
+journal = {Numerical Linear Algebra with Applications},
+volume = {n/a},
+number = {n/a},
+pages = {e2523},
+keywords = {algebraic multigrid, high performance computing, Richards equation, spectral analysis},
+doi = {https://doi.org/10.1002/nla.2523},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2523},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nla.2523},
+abstract = {Abstract We consider here a cell-centered finite difference approximation of the Richards equation in three dimensions, averaging for interface values the hydraulic conductivity K=K(p)\$\$ K=K(p) \$\$, a highly nonlinear function, by arithmetic, upstream and harmonic means. The nonlinearities in the equation can lead to changes in soil conductivity over several orders of magnitude and discretizations with respect to space variables often produce stiff systems of differential equations. A fully implicit time discretization is provided by backward Euler one-step formula; the resulting nonlinear algebraic system is solved by an inexact Newton Armijo–Goldstein algorithm, requiring the solution of a sequence of linear systems involving Jacobian matrices. We prove some new results concerning the distribution of the Jacobians eigenvalues and the explicit expression of their entries. Moreover, we explore some connections between the saturation of the soil and the ill conditioning of the Jacobians. The information on eigenvalues justifies the effectiveness of some preconditioner approaches which are widely used in the solution of Richards equation. We also propose a new software framework to experiment with scalable and robust preconditioners suitable for efficient parallel simulations at very large scales. Performance results on a literature test case show that our framework is very promising in the advance toward realistic simulations at extreme scale.}
+}
+
