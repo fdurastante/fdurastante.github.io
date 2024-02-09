@@ -7488,7 +7488,7 @@ Path not saved: please re-call importmanopt next time.
 <h3 id="The-problem-we-want-to-solve">The problem we want to solve<a class="anchor-link" href="#The-problem-we-want-to-solve">¶</a></h3><p>Given a <strong>stochastic matrix</strong> $P$, i.e.,
 $$P \mathbf{1} = \mathbf{1}, \qquad P \geq 0,$$</p>
 <p>we want to find a <strong>stochastic</strong> matrix $X$ such that
-$$ X^r = P, \qquad r \in \mathbb{N}. $$</p>
+$$ X^p = P, \qquad p \in \mathbb{N},\;\; p \geq 2. $$</p>
 <p>In general, such a matrix does not exist, consider, e.g., the matrix
 $$ P = \begin{bmatrix} 0.5000 &amp; 0.3750 &amp; 0.1250 \\
 0.7500 &amp; 0.1250 &amp; 0.1250 \\
@@ -7604,7 +7604,7 @@ The eigenvalues are $\lambda(P) = \{-0.2500,0.7500,1\}$.</p>
 		1-2a &amp; 1+a &amp; 1+a \\
 		1+a &amp; 1-2a &amp; 1+a \\
 		1+a &amp; 1+a &amp; 1-2a \\
-	\end{bmatrix}, \quad 0 &lt; a \leq \frac{1}{3}, \quad \lambda{(P(a))} = \{1,-i \sqrt{a},i \sqrt{a}\}.$$
+	\end{bmatrix}, \quad 0 &lt; a \leq \frac{1}{3}, \; \lambda{(P(a))} = \{1,-i \sqrt{a},i \sqrt{a}\}.$$
 Has only one stochastic square root, which <strong>is not a primary function</strong></p>
 </div>
 </div>
@@ -7714,7 +7714,7 @@ Has only one stochastic square root, which <strong>is not a primary function</st
 $$ \mathbb{S}_n^0 = \{ S \in \mathbb{R}^{n \times n} \,:\; S \mathbf{1} = \mathbf{1}, \; S \geq 0 \}, $$
 and decide to compute one between</p>
 <ul>
-<li>$ X = \displaystyle \arg\min_{ X  \in \mathbb{S}_n^0 } \frac{1}{2}\| X^p -  \|_F^2. $,</li>
+<li>$ X = \displaystyle \arg\min_{ X  \in \mathbb{S}_n^0 } \frac{1}{2}\| X^p -  A\|_F^2$,</li>
 <li>$ \displaystyle X = \arg\min_{ X  \in \mathbb{S}_n^0 } \frac{1}{2}\| X - A^{\frac{1}{p}} \|_F^2$,</li>
 <li>$ X = \arg\min_{ X  \in \mathbb{S}_n^0 } \frac{1}{2}\| X - A^{\frac{1}{p}} \|_F^2$, where $\Omega = \{ \mathbf{h} \in \mathbb{R}^n \,:\,\mathbf{1}^T \mathbf{h} = 1,\; B \mathbf{h} \geq 0,  \; B = [\operatorname{vec}(I)|\operatorname{vec}(A)|\cdots|\operatorname{vec}(A^{n-1})] \}$, and approximate $$ X = X(\mathbf{h}) = \sum_{i=0}^{n-1} h_i A^i. $$</li>
 </ul>
@@ -9116,8 +9116,7 @@ Total time is 3.443367 [s] (excludes statsfun)
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="The-reducible-case">The reducible case<a class="anchor-link" href="#The-reducible-case">¶</a></h3><p>We consider here what is an <em>edge case</em> for our approach, i.e.,  when the chain is reducible due to the existence of two communication classes; in other words, to the case in which the stationary distribution $\boldsymbol{\pi} = [0,\ldots,0,1]^T$.</p>
 <ul>
-<li><strong>Application:</strong> R. A. Jarrow, D. Lando, and S. M. Turnbull, [A Markov Model for the Term Structure of Credit Risk Spreads](https:
-//doi.org/10.1093/rfs/10.2.481), The Review of Financial Studies, 10 (2015), pp. 481–523.</li>
+<li><strong>Application:</strong> R. A. Jarrow, D. Lando, and S. M. Turnbull, <a href="https://doi.org/10.1093/rfs/10.2.481">A Markov Model for the Term Structure of Credit Risk Spreads</a>, The Review of Financial Studies, 10 (2015), pp. 481–523.</li>
 </ul>
 <p>The Markov chain modelling represents the dynamics of the different credit rating states, i.e., evaluations of the relative ability of an entity or obligation to meet financial commitments over time and examining the probability of transitioning between these states.</p>
 </div>
