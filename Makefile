@@ -1,4 +1,4 @@
-publish:
+publish: build
 	ghp-import -n -p -f _site
 build:
 	bundle exec jekyll build
