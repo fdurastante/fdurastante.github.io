@@ -312,16 +312,6 @@ problems in a non-trivial way.
          <a href="https://github.com/Cirdans-Home/padelogarithm" target="_blank"><i class="fa-solid fa-code"></i></a>
          </li>
          <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
-         <strong>Durastante, F.</strong>; <strong>Meini, B.</strong>.
-         Stochastic $p$th root approximation of a stochastic matrix: A Riemannian
-         optimization approach. <em>SIAM J. Matrix Anal. Appl.</em>  <strong> 45 </strong> (2024),
-         no. 2, 875--904. <a href="https://mathscinet.ams.org/mathscinet/article?mr=4734557" target="_blank"><strong>MR4734557</strong></a>
-         <a href="/bibtex/Meini2024.bib" target="_blank"><i class="fa-solid fa-quote-right"></i></a>
-         <a href="https://fdurastante.github.io/courses/markovslides/markovrootsslides.html#/" target="_blank"><i class="fa-solid fa-person-chalkboard"></i></a>
-         <a href="https://gist.github.com/Cirdans-Home/76ab38cbd922e56caebc526087569ad5" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
-         <a href="https://github.com/Cirdans-Home/pth-root-stochastic" target="_blank"><i class="fa-solid fa-code"></i></a>
-         </li>
-         <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
            <strong>Bertaccini, D.</strong>; <strong>Durastante, F.</strong>.
            Computing function of large matrices by a preconditioned rational Krylov
            method.
@@ -391,19 +381,14 @@ problems in a non-trivial way.
        <strong>Submitted</strong> (2024).
        {% include arxiv.html content="http://arxiv.org/abs/2409.02524" %}
        </li>
-       <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>
+       <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
         <strong>Benzi, M.</strong>; <strong>Durastante, F.</strong>;
         <strong>Zigliotto, F.</strong>
         Modelling advection on distance-weighted directed networks. 
-        <strong>Accepted</strong> Math. Models Methods Appl. Sci. (2025).
-        {% include arxiv.html content="https://arxiv.org/abs/2410.11352" %}
-       </li>
-       <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
-       <strong>Bini, D. A.</strong>; <strong>Durastante, F.</strong>;
-       <strong>Kim, S.</strong>; <strong>Meini, B.</strong>
-       On Kemeny's constant and stochastic complement. <em>Linear Algebra Appl.</em> 
-      <strong>703</strong> (2024), 137-162. <a href="https://mathscinet.ams.org/mathscinet/article?mr=4797227" target="_blank"><strong>MR4797227</strong></a>
-      <a href="/papers/LAA2024.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a> <a href="https://doi.org/10.1016/j.laa.2024.09.001" target="_blank">Open access</a> <a href="/bibtex/Bini2024.bib" target="_blank"><i class="fa-solid fa-quote-right"></i></a> <a href="https://github.com/Cirdans-Home/Kemeny-and-Conquer" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <em>Math. Models Methods Appl. Sci.</em> <strong>35</strong> (2025), no. 5, 
+        1237-1265. <a href="https://mathscinet.ams.org/mathscinet-getitem?mr=4896519" target="_blank"><strong>MR4896519</strong></a>
+        <a href="/bibtex/Benzi2025.bib" target="_blank"><i class="fa-solid fa-quote-right"></i></a>
+        <a href="https://github.com/francesco-zigliotto/graph-advection" target="_blank"><i class="fa-solid fa-code"></i></a>
        </li>
        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
          <strong>Bertaccini, D.</strong>; <strong>Durastante, F.</strong>
@@ -454,8 +439,60 @@ problems in a non-trivial way.
      </td>
   </tr>
   </table>
-
-Inverse problems are involved in the task of inferring the parameters of the
+<p>
+  Numerical algorithms for Markov chains are essential tools in the analysis of stochastic processes.
+  A Markov chain is defined by a transition matrix $ P $, where $ P_{ij} $ represents the probability
+  of moving from state $ i $ to state $ j $. A central computational task is finding the stationary
+  distribution $ \pi $, satisfying $ \pi P = \pi $ and $ \sum_i \pi_i = 1 $. Beyond stationarity,
+  algorithms also address the <em>embeddability problem</em>, which seeks a generator matrix $ Q $
+  such that $ P = e^{Q} $, characterizing $ P $ as the discretization of a continuous-time Markov process.
+  Another important property is <em>reversibility</em>, where $ \pi_i P_{ij} = \pi_j P_{ji} $ for all $ i, j $,
+  which simplifies analysis and enables structure-preserving approximations. Additionally, computing
+  the <em>Kemeny constant</em>, defined as $ K = \sum_{j} m_{ij} \pi_j $ (independent of $ i $), where
+  $ m_{ij} $ is the expected number of steps to reach state $ j $ from $ i $, provides insight into
+  the overall mixing behavior of the chain. Efficient numerical methods, including Riemannian optimization,
+  sparse and dense linear solvers, eigendecomposition techniques, are key to tackling these challenges
+  at scale.
+</p>
+  <table style="width:100%">
+    <colgroup>
+     <col span="1" style="width: 30%;">
+     <col span="1" style="width: 70%;">
+   </colgroup>
+  <tr>
+  <td style="text-align: center">
+    Numerical methods for Markov Chains
+  </td>
+  <td>
+    <ul class="fa-ul">
+      <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>
+      <strong>Durastante, F.</strong>; <strong>Gnazzo, M.</strong>, <strong>Meini, B.</strong>.
+      A Riemannian Optimization Approach for Finding the Nearest Reversible Markov Chain.
+      <strong>Submitted</strong> (2025). <a href="https://github.com/miryamgnazzo/nearest-reversible" target="_blank"><i class="fa-solid fa-code"></i></a>
+      {% include arxiv.html content="https://arxiv.org/abs/2505.16762" %}
+      </li>  
+      <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+      <strong>Durastante, F.</strong>; <strong>Meini, B.</strong>.
+      Stochastic $p$th root approximation of a stochastic matrix: A Riemannian
+      optimization approach. <em>SIAM J. Matrix Anal. Appl.</em>  <strong> 45 </strong> (2024),
+      no. 2, 875--904. <a href="https://mathscinet.ams.org/mathscinet/article?mr=4734557" target="_blank"><strong>MR4734557</strong></a>
+      <a href="/bibtex/Meini2024.bib" target="_blank"><i class="fa-solid fa-quote-right"></i></a>
+      <a href="https://fdurastante.github.io/courses/markovslides/markovrootsslides.html#/" target="_blank"><i class="fa-solid fa-person-chalkboard"></i></a>
+      <a href="https://gist.github.com/Cirdans-Home/76ab38cbd922e56caebc526087569ad5" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+      <a href="https://github.com/Cirdans-Home/pth-root-stochastic" target="_blank"><i class="fa-solid fa-code"></i></a>
+      </li>
+      <li><span class="fa-li"><i class="fas fa-check-square"></i></span>
+      <strong>Bini, D. A.</strong>; <strong>Durastante, F.</strong>;
+      <strong>Kim, S.</strong>; <strong>Meini, B.</strong>
+      On Kemeny's constant and stochastic complement. <em>Linear Algebra Appl.</em> 
+    <strong>703</strong> (2024), 137-162. <a href="https://mathscinet.ams.org/mathscinet/article?mr=4797227" target="_blank"><strong>MR4797227</strong></a>
+    <a href="/papers/LAA2024.pdf" target="_blank"><i class="fa-regular fa-file-pdf"></i></a> <a href="https://doi.org/10.1016/j.laa.2024.09.001" target="_blank">Open access</a> <a href="/bibtex/Bini2024.bib" target="_blank"><i class="fa-solid fa-quote-right"></i></a> <a href="https://github.com/Cirdans-Home/Kemeny-and-Conquer" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </li>
+   </ul>
+  </td>
+  </tr>
+  </table>
+<p>Inverse problems are involved in the task of inferring the parameters of the
 model from a set of (possibly noisy) measurements requires. These types of
 problems can be difficult to solve for several reasons, e.g., one could be
 dealing with a lack of unicity, that is: different values of parameters are
@@ -464,7 +501,7 @@ challenging from the computational point of view. I have done some work in using
 linear algebra techniques for a particular type of inverse problem that is
 <em>image denoise and deblurring</em>, that is the process of removing blurring
 artifacts and noise from images (e.g., somebody shook the camera while we were
-taking the photo).
+taking the photo).</p>
   <table style="width:100%">
     <colgroup>
      <col span="1" style="width: 70%;">
