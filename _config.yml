@@ -21,7 +21,7 @@
 title: Fabio Durastante
 email: fabio.durastante@unipi.it
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Researcher (RTDb) in Numerical Mathematics at Pisa University
+  I'm an Associate Professor (PA) in Numerical Mathematics at Pisa University
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fdurastante.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Cirdans-Home
@@ -46,8 +46,8 @@ google-site-verification: google149f3f1f84e56dc5.html
 
 # Settings of the template
 username: Fabio Durastante
-user_description: I'm a Researcher (RTDb) in Numerical Mathematics at Pisa University
-user_title: Researcher
+user_description: I'm an Associate Professor (PA) in Numerical Mathematics at Pisa University
+user_title: Associate Professor
 
 # Build settings
 plugins:
