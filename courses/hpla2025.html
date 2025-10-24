@@ -1,0 +1,67 @@
+---
+layout: research
+---
+
+<h1 id="about">High Performance Linear Algebra</h1>
+
+<p>This course will cover topics in Linear Algebra, specifically concerning the way to implement them on modern computer architectures and clusters. 
+The course will cover both the theoretical aspects underlying the routine we want to implement, both the the implementation aspects that are needed
+to achieve <em>high performance</em>; while specifying what do we actually mean by that.</p>
+
+    <h3>Main list of the topics</h3>
+    <p><ul>
+        <li>Vector and Matrix Products
+            <ul>
+                <li>Inner product</li>
+                <li>Outer product</li>
+                <li>Matrix-vector product</li>
+                <li>Matrix-matrix product</li>
+                <li>Row, column, and submatrix partitioning</li>
+            </ul>
+        </li>
+        <li>LU Factorization
+            <ul>
+                <li>ijk forms of Gaussian elimination</li>
+                <li>Row, column, and submatrix partitioning</li>
+                <li>Partial pivoting and alternatives</li>
+            </ul>
+        </li>
+        <li>Cholesky Factorization
+            <ul>
+                <li>ijk forms of Cholesky factorization</li>
+                <li>Memory access patterns</li>
+                <li>Data dependences</li>
+            </ul>
+        </li>
+        <li>Triangular, band and tridiagonal Systems
+            <ul>
+                <li>Row vs. column partitioning</li>
+                <li>Fan-in and fan-out algorithms</li>
+                <li>Wavefront algorithms</li>
+                <li>Cyclic algorithms</li>
+                <li>Cyclic reduction</li>
+            </ul>
+        </li>
+        <li>Sparse BLAS
+            <ul>
+                <li>Matrix-vector product</li>
+                <li>Matrix-matrix product</li>
+                <li>Matrix storage formats</li>
+            </ul>
+        </li>
+        <li>Implementation of Krylov iterative solvers
+            <ul>
+                <li>CG and GMRES</li>
+            </ul>
+        </li>
+        <li>Distributed Sparse and Dense BLAS
+            <ul>
+                <li>Data distribution</li>
+                <li>Handling of the parallel environment</li>
+                <li>Programming models</li>
+            </ul>
+        </li>
+        <li>How to write efficient threaded and GPU accelerated implementation of the different LA routines.</li>
+    </ul></p>
+    <p>The <strong>final exam</strong> consists of the implementation and testing of a scalable algorithm for linear algebra, or the discussion and use within an application.</p>
+
