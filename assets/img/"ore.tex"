@@ -1,0 +1,150 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=4.747in,
+height=3.26in,
+at={(0.796in,0.44in)},
+scale only axis,
+bar shift auto,
+xmin=0.509090909090909,
+xmax=6.49090909090909,
+xtick={1,2,3,4,5,6},
+xticklabels={{2019/20},{2020/21},{2021/22},{2022/23},{2023/24},{2024/25}},
+ymin=0,
+ymax=80,
+axis background/.style={fill=white},
+legend style={at={(0.03,0.97)}, anchor=north west, legend cell align=left, align=left, draw=white!15!black}
+]
+\addplot[ybar, bar width=0.145, fill=mycolor1, draw=black, area legend] table[row sep=crcr] {%
+1	12\\
+2	10\\
+3	10\\
+4	15\\
+5	18\\
+6	0\\
+};
+\addplot[forget plot, color=white!15!black] table[row sep=crcr] {%
+0.509090909090909	0\\
+6.49090909090909	0\\
+};
+\addlegendentry{Other Courses}
+
+\addplot[ybar, bar width=0.145, fill=mycolor2, draw=black, area legend] table[row sep=crcr] {%
+1	0\\
+2	42\\
+3	44\\
+4	71\\
+5	62\\
+6	20\\
+};
+\addplot[forget plot, color=white!15!black] table[row sep=crcr] {%
+0.509090909090909	0\\
+6.49090909090909	0\\
+};
+\addlegendentry{Bachelor}
+
+\addplot[ybar, bar width=0.145, fill=mycolor3, draw=black, area legend] table[row sep=crcr] {%
+1	0\\
+2	0\\
+3	18\\
+4	10\\
+5	19\\
+6	56\\
+};
+\addplot[forget plot, color=white!15!black] table[row sep=crcr] {%
+0.509090909090909	0\\
+6.49090909090909	0\\
+};
+\addlegendentry{Master}
+
+\addplot[ybar, bar width=0.145, fill=mycolor4, draw=black, area legend] table[row sep=crcr] {%
+1	0\\
+2	0\\
+3	52\\
+4	34\\
+5	20\\
+6	0\\
+};
+\addplot[forget plot, color=white!15!black] table[row sep=crcr] {%
+0.509090909090909	0\\
+6.49090909090909	0\\
+};
+\addlegendentry{Ph.D.}
+
+\node[above, align=center, inner sep=0]
+at (axis cs:0.729,12) {12};
+\node[above, align=center, inner sep=0]
+at (axis cs:1.729,10) {10};
+\node[above, align=center, inner sep=0]
+at (axis cs:2.729,10) {10};
+\node[above, align=center, inner sep=0]
+at (axis cs:3.729,15) {15};
+\node[above, align=center, inner sep=0]
+at (axis cs:4.729,18) {18};
+\node[above, align=center, inner sep=0]
+at (axis cs:5.729,0) { 0};
+\node[above, align=center, inner sep=0]
+at (axis cs:0.91,0) { 0};
+\node[above, align=center, inner sep=0]
+at (axis cs:1.91,42) {42};
+\node[above, align=center, inner sep=0]
+at (axis cs:2.91,44) {44};
+\node[above, align=center, inner sep=0]
+at (axis cs:3.91,71) {71};
+\node[above, align=center, inner sep=0]
+at (axis cs:4.91,62) {62};
+\node[above, align=center, inner sep=0]
+at (axis cs:5.91,20) {20};
+\node[above, align=center, inner sep=0]
+at (axis cs:1.09,0) { 0};
+\node[above, align=center, inner sep=0]
+at (axis cs:2.09,0) { 0};
+\node[above, align=center, inner sep=0]
+at (axis cs:3.09,18) {18};
+\node[above, align=center, inner sep=0]
+at (axis cs:4.09,10) {10};
+\node[above, align=center, inner sep=0]
+at (axis cs:5.09,19) {19};
+\node[above, align=center, inner sep=0]
+at (axis cs:6.09,56) {56};
+\node[above, align=center, inner sep=0]
+at (axis cs:1.271,0) { 0};
+\node[above, align=center, inner sep=0]
+at (axis cs:2.271,0) { 0};
+\node[above, align=center, inner sep=0]
+at (axis cs:3.271,52) {52};
+\node[above, align=center, inner sep=0]
+at (axis cs:4.271,34) {34};
+\node[above, align=center, inner sep=0]
+at (axis cs:5.271,20) {20};
+\node[above, align=center, inner sep=0]
+at (axis cs:6.271,0) { 0};
+\end{axis}
+
+\begin{axis}[%
+width=6.125in,
+height=4in,
+at={(0in,0in)},
+scale only axis,
+xmin=0,
+xmax=1,
+ymin=0,
+ymax=1,
+axis line style={draw=none},
+ticks=none,
+axis x line*=bottom,
+axis y line*=left
+]
+\end{axis}
+\end{tikzpicture}%
