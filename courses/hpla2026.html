@@ -1,0 +1,77 @@
+---
+layout: research
+---
+
+<h1 id="about">High Performance Linear Algebra</h1>
+
+<p>This course will cover topics in Linear Algebra, specifically concerning the way to implement them on modern computer architectures and clusters. 
+The course will cover both the theoretical aspects underlying the routine we want to implement, both the the implementation aspects that are needed
+to achieve <em>high performance</em>; while specifying what do we actually mean by that.</p>
+
+    <h3>Main list of the topics</h3>
+    <p> This a tentativ list of the topics that will be covered during the course, we will discuss
+        with the attending students the order and the depth of each topic depending on their interests
+        and background.</p>
+    <p>
+        <ul>
+        <li>Vector and Matrix Products
+            <ul>
+                <li>Inner product</li>
+                <li>Outer product</li>
+                <li>Matrix-vector product</li>
+                <li>Matrix-matrix product</li>
+                <li>Row, column, and submatrix partitioning</li>
+            </ul>
+        </li>
+        <li>LU Factorization
+            <ul>
+                <li>ijk forms of Gaussian elimination</li>
+                <li>Row, column, and submatrix partitioning</li>
+                <li>Partial pivoting and alternatives</li>
+            </ul>
+        </li>
+        <li>Cholesky Factorization
+            <ul>
+                <li>ijk forms of Cholesky factorization</li>
+                <li>Memory access patterns</li>
+                <li>Data dependences</li>
+            </ul>
+        </li>
+        <li>Triangular, band and tridiagonal Systems
+            <ul>
+                <li>Row vs. column partitioning</li>
+                <li>Fan-in and fan-out algorithms</li>
+                <li>Wavefront algorithms</li>
+                <li>Cyclic algorithms</li>
+                <li>Cyclic reduction</li>
+            </ul>
+        </li>
+        <li>Sparse BLAS
+            <ul>
+                <li>Matrix-vector product</li>
+                <li>Matrix-matrix product</li>
+                <li>Matrix storage formats</li>
+            </ul>
+        </li>
+        <li>Distributed Dense BLAS
+            <ul>
+                <li>Data distribution</li>
+                <li>Handling of the parallel environment</li>
+                <li>Programming models</li>
+            </ul>
+        </li>
+        <li>How to write efficient threaded and GPU accelerated implementation of the different LA routines.</li>
+    </ul></p>
+    <p>The <strong>final exam</strong> consists of the implementation and testing of a scalable algorithm for linear algebra, or the discussion and use within an application.</p>
+
+    <h3>Schedule</h3>
+    <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa-solid fa-calendar"></i></span>Tuesday 10 November, 2026. Ph.D. in HPSC courses presentation 2026-27</li>
+    </ul>
+ 
+    <h3>Slides and Materials</h3>
+    <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa-solid fa-book"></i></span><a href="{{ 'hpla2026/ParallelLinearAlgebra.pdf' | prepend: site.baseurl }}" target="_blank">Lecture notes</a>: pay attention these are 
+        a work in progress, hence they will evolve and change during the course: avoid printing as much as possible.</li>
+        <li><span class="fa-li"><i class="fa-solid fa-person-chalkboard"></i></span><a href="{{ 'hpla2026/intro.pdf' | prepend: site.baseurl }}" target="_blank">Introductory lecture: bureaucracy and some motivation</a></li>
+    </ul>
